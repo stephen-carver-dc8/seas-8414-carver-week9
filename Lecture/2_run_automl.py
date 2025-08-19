@@ -12,3 +12,10 @@ aml.train(x=x, y=y, training_frame=train)
 print("H2O AutoML process complete.")
 print("Leaderboard:")
 print(aml.leaderboard.head())
+
+# (Add this to the end of 2_run_automl.py)
+# Get the best performing model from the leaderboard
+best_model = aml.leader
+# Download the MOJO artifact.
+mojo_path = best_model.download_mojo(path="./models/")
+print(f"Production-ready model saved to: {mojo_path}")
