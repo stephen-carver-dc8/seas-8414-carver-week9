@@ -1,7 +1,7 @@
 # Filename: 1_generate_dga_data.py
 import csv
 import random
-import mathdef 
+import math
 
 def get_entropy(s):
     p, lns = {}, float(len(s))
