@@ -1,0 +1,6 @@
+=== Prescriptive Playbook ===
+Domain: kq3v9z7j1x5f8g2h.info
+1. Isolate the source host from the network (EDR containment or VLAN quarantine).
+2. Block the domain at DNS, proxy, and firewall; add it to your blocklists.
+3. Collect and preserve evidence (DNS logs, EDR timeline, process list, persistence, outbound connections).
+4. Remediate or reimage if malware is found; rotate credentials and monitor for re-queries.
