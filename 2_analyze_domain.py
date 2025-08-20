@@ -192,12 +192,13 @@ def main():
         playbook = asyncio_run(generate_playbook_genai(domain, xai_text))
         print("\n=== Prescriptive Playbook ===")
         print(playbook)
-        with open("prescriptive_playbook.txt", "w") as f:
+        with open("prescriptive_playbook.txt", "a") as f:
             f.write("=== Prescriptive Playbook ===\n")
             f.write(str(playbook) + "\n")
     else:
         print("\nNo prescriptive playbook generated (prediction is 'legit').")
-        with open("prescriptive_playbook.txt", "w") as f:
+        with open("prescriptive_playbook.txt", "a") as f:
+            f.write("=== Prescriptive Playbook ===\n")
             f.write(f"Domain: {domain}\n")
             f.write("No prescriptive playbook generated (prediction is 'legit').\n")
 

@@ -6,4 +6,4 @@ services:
       - "54321:54321"
     volumes:
       - .:/app
-    command: /bin/sh -c "python 1_train_and_export.py && python 2_analyze_domain.py --domain kq3v9z7j1x5f8g2h.info"
+    command: /bin/sh -c "python 1_train_and_export.py && python 2_analyze_domain.py --domain google.com && python 2_analyze_domain.py --domain kq3v9z7j1x5f8g2h.info"
