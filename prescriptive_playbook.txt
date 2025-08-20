@@ -1,4 +1,7 @@
 === Prescriptive Playbook ===
+Domain: google.com
+No prescriptive playbook generated (prediction is 'legit').
+=== Prescriptive Playbook ===
 Domain: kq3v9z7j1x5f8g2h.info
 1. Isolate the source host from the network (EDR containment or VLAN quarantine).
 2. Block the domain at DNS, proxy, and firewall; add it to your blocklists.
