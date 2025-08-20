@@ -24,7 +24,7 @@ for _ in range(100):
     domain = ''.join(random.choice('abcdefghijklmnopqrstuvwxyz0123456789') for _ in range(length)) + ".com"
     data.append([domain, len(domain), get_entropy(domain), 'dga'])
 
-with open('dga_dataset_train.csv', 'w', newline='') as f:
+with open('data/dga_dataset_train.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(header)
     writer.writerows(data)

@@ -3,7 +3,7 @@ import h2o
 from h2o.automl import H2OAutoML
 
 h2o.init()
-train = h2o.import_file("dga_dataset_train.csv")
+train = h2o.import_file("data/dga_dataset_train.csv")
 x = ['length', 'entropy']  # Features
 y = "class"  # Target
 train[y] = train[y].asfactor()
